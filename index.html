@@ -7,101 +7,88 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffeb99; /* light yellow */
-            color: #4d2600; /* dark brown */
+            background-color: #ffeb99;
+            color: #4d2600;
             margin: 0px;
             padding: 20px;
             border-radius: 5px;
-        } 
+        }
 
         .back-to-top {
-            text-align: bottom;
             margin-right: 150px;
             margin-left: 150px;
             background-color: #a6722e;
             color: #ffe680;
-            text-decoration: none; /* To prevent underline */
+            text-decoration: none;
             display: inline-block;
             padding: 5px 10px;
             border-radius: 5px;
+            position: relative;
         }
 
-    
         header {
-            background-color: #a6722e; /* medium brown */
+            background-color: #a6722e;
             color: #4d2600;
             text-align: center;
             padding: 10px;
             font-size: 18px;
             border-radius: 5px;
-        } 
-    
+        }
+
         .menu-section {
             padding: 15px;
             margin-bottom: 10px;
-            background-color: #ffe680; /* yellow */
+            background-color: #ffe680;
             border-bottom: 2px solid #4d2600;
-            border: 1px dotted  #4d2600;
+            border: 1px dotted #4d2600;
             border-radius: 5px;
         }
-    
+
         .menu-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 5px;
         }
-    
+
         .menu-item {
             margin: 20px 0;
             font-size: 15px;
             display: flex;
             justify-content: space-between;
-            padding: 5px; /* Adjust padding for menu item */
+            align-items: center;
+            padding: 5px;
         }
-    
+
         .price {
-            font-size: 8px;
-            background-color: #ffcc66; /* darker yellow */
+            font-size: 16px;
+            background-color: #ffcc66;
             padding: 2px 5px;
             border-radius: 5px;
             color: #4d2600;
-            text-align: right;
-            align-items: center;
-            margin-left: auto; /* Push price to the right */
-        }
-    
-        .price-label {
-            font-size: 8px;
-            font-weight: bold;
             display: flex;
-            width: 60px;
-            height: 0px;
-            text-align: left;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 5px;
         }
-    
+
         footer {
-            background-color: #a6722e; /* medium brown */
+            background-color: #a6722e;
             color: #4d2600;
             text-align: center;
             padding: 10px;
             font-size: 14px;
         }
-    
+
         .logo {
             justify-content: center;
             color: #4d2600;
         }
-    
-        .welcome {
-            display: flex;
-            justify-content: center;
-        }
-    
+
         .button {
             text-align: center;
             text-decoration: none;
         }
-    
+
         a {
             color: #4d2600;
             text-decoration: none;
@@ -113,82 +100,20 @@
             margin-right: 80px;
             border-radius: 25px;
         }
-    
+
         /* Media Queries for Responsiveness */
-    
-        /* Mobile devices */
         @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            header {
-                font-size: 16px;
-            }
-            .menu-title {
-                font-size: 16px;
-            }
             .menu-item {
                 flex-direction: column;
                 align-items: flex-start;
-                ;
-            }
-            .price {
-                font-size: 10px;
-                margin-right: 0; /* Reset margin for mobile view */
             }
             a {
                 margin-left: 20px;
                 margin-right: 20px;
             }
         }
-    
-        /* Tablets */
-        @media (min-width: 601px) and (max-width: 900px) {
-            body {
-                padding: 15px;
-            }
-            header {
-                font-size: 17px;
-            }
-            .menu-title {
-                font-size: 17px;
-            }
-            .menu-item {
-                margin: 15px 0;
-            }
-            .price {
-                font-size: 9px;
-            }
-            a {
-                margin-left: 50px;
-                margin-right: 50px;
-            }
-        }
-    
-        /* Laptops and larger screens */
-        @media (min-width: 901px) {
-            body {
-                padding: 20px;
-            }
-            header {
-                font-size: 18px;
-            }
-            .menu-title {
-                font-size: 18px;
-            }
-            .menu-item {
-                margin: 20px 0;
-            }
-            .price {
-                font-size: 8px;
-            }
-            a {
-                margin-left: 80px;
-                margin-right: 80px;
-            }
-        }
     </style>
-</head>
+<style type="text/css" id="mytempCss">._8mqQwQ { display: none; } ._1TWLMK.icF5zO { opacity: 0.01; }</style></head>
 <body>
     <header>
         <div class="logo">
@@ -196,29 +121,29 @@
             <h2 style="text-align:center;">HOTEL SREE ANANDHA BAVAN</h2>
         </div>
         
-        <h3 style="color:#ffbf36 ">MENU CARD<h3>
-    </header>
+        <h3 style="color:#ffbf36 ">MENU CARD</h3><h3>
+    </h3></header>
      <p id="start"></p>
     <p style="font-weight:bold;text-align:center;font-size:22px"> "Tap the Button to Customize Your Meal Experience"</p>
     
    
     <div class="button">
      
-      <a href="#section1">IDLY & OTHERS</a>
+      <a href="#section1">IDLY &amp; OTHERS</a>
       <p></p>
       <a href="#section2">SNACKS</a>
       <p></p>
       <a href="#section3">DOSA VARIETIES</a>
       <p></p>
-      <a href="#section4">IDIYAPPAM & APPAM</a>
+      <a href="#section4">IDIYAPPAM &amp; APPAM</a>
       <p></p>
       <a href="#section5">VARIETIES RICE</a>
       <p></p>
       <a href="#section6">MEALS</a>
        <p></p>
-      <a href="#section7">FRIED RICE & NOODLES</a>
+      <a href="#section7">FRIED RICE &amp; NOODLES</a>
        <p></p>
-      <a href="#section8">STARTERS & MASALA</a>
+      <a href="#section8">STARTERS &amp; MASALA</a>
        <p></p>
       <a href="#section9">PAROTTA VARIETIES</a>
        <p></p>
@@ -230,13 +155,13 @@
        <p></p>
       <a href="#section13">FRESH JUICES</a>
        <p></p>
-      <a href="#section14">TEA & COFFEE</a>
+      <a href="#section14">TEA &amp; COFFEE</a>
     </div>
     <p></p>
     
     <div class="menu-section">
       <p id="section1"></p>
-        <div class="menu-title">Idly & Others (06:30 am to 10:30 am & 05:00 pm to 10:30 pm)</div>
+        <div class="menu-title">Idly &amp; Others (06:30 am to 10:30 am &amp; 05:00 pm to 10:30 pm)</div>
         <div class="menu-item">
             <span>Idly</span>
             <span class="price">
@@ -624,7 +549,7 @@
     <a class="back-to-top" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section4"></p>
-    <div class="menu-title">Idiyappam & Appam (07:00 am to 10:00 am & 04:00 pm to 11:00 pm)</div>
+    <div class="menu-title">Idiyappam &amp; Appam (07:00 am to 10:00 am &amp; 04:00 pm to 11:00 pm)</div>
     <div class="menu-item">
         <span>Aappam</span>
         <span class="price">
@@ -760,7 +685,7 @@
     <a class="back-to-top" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section7"></p>
-    <div class="menu-title">Rice & Noodles (12:00 pm to 11:00 pm)</div>
+    <div class="menu-title">Rice &amp; Noodles (12:00 pm to 11:00 pm)</div>
     <div class="menu-item">
         <span>Fried Rice</span>
         <span class="price">
@@ -885,7 +810,7 @@
 </div>
 <div class="menu-section">
   <p id="section8"></p>
-    <div class="menu-title">Starters & Masala (12:00 pm to 11:00 pm)</div>
+    <div class="menu-title">Starters &amp; Masala (12:00 pm to 11:00 pm)</div>
     <div class="menu-item">
         <span>Gobi 65</span>
         <span class="price">
@@ -1446,7 +1371,7 @@
     <a class="back-to-top" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section14"></p>
-    <div class="menu-title">Tea & Coffee (06:30 am to 11:00 pm)</div>
+    <div class="menu-title">Tea &amp; Coffee (06:30 am to 11:00 pm)</div>
     <div class="menu-item">
         <span>Coffee</span>
         <span class="price">
@@ -1564,5 +1489,43 @@
         Tirupur Dt - 638 812.</p>
         <p>Contact - +91 94434 54444</p>
 </footer>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
