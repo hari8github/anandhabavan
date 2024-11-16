@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,25 +16,58 @@
         }
 
         .back-to-top {
-            margin-right: 150px;
-            margin-left: 150px;
-            background-color: #a6722e;
-            color: #ffe680;
-            text-decoration: none;
-            display: inline-block;
-            padding: 5px 10px;
-            border-radius: 5px;
-            position: relative;
+        display: block;
+        color: #ffffff; /* White text */
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px auto;
+        background-color: #4d2600; /* Matches header background color */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        font-size: 16px;
+        cursor: pointer;
+        max-width: 200px; /* Consistent size */
         }
 
-        .header {
-            background-color: #a6722e;
-            color: #4d2600;
-            text-align: center;
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 5px;
+/* Hover effect */
+        .back-to-top:hover,
+        .back-to-top:focus {
+        background-color: #4d2600; /* Slightly darker shade of the header color */
+        transform: scale(1.05); /* Slightly larger */
         }
+
+
+        header {
+    background-color: #a36b2a; /* Match the header background color */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center align the text and content */
+    padding: 20px 10px; /* Add spacing around the content */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+    border-radius: 10px; /* Rounded edges to match the style */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+header h1 {
+    font-size: 32px; /* Hotel name font size */
+    margin: 0; /* Remove unnecessary margin */
+    font-weight: bold;
+}
+
+header p {
+    font-size: 18px; /* Subtext font size */
+    margin: 10px 0 0; /* Add spacing below title */
+    color: #ffcc66; /* Match the "MENU CARD" text color */
+}
+
+header img {
+    max-width: 100px; /* Adjust image size */
+    margin: 10px auto; /* Center align the image */
+    display: block;
+}
 
         .menu-section {
             padding: 15px;
@@ -70,6 +104,22 @@
             margin-top: 5px;
             display: block;
         }
+
+        .price-section {
+    text-align: left;
+    font-size: 16px; /* Adjust as needed */
+    line-height: 1.5; /* Add proper spacing between lines */
+}
+
+.price-title {
+    font-weight: bold;
+    color: #000; /* Color for titles */
+}
+
+.price-value {
+    color: #000; /* Color for values */
+    font-weight: normal;
+}
 
         .footer {
             background-color: #a6722e;
