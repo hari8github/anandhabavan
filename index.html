@@ -1,4 +1,4 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,36 +11,40 @@
             color: #4d2600; /* dark brown */
             margin: 0px;
             padding: 20px;
-            border-radius: 5px
+            border-radius: 5px;
         } 
+    
         header {
             background-color: #a6722e; /* medium brown */
             color: #4d2600;
             text-align: center;
             padding: 10px;
             font-size: 18px;
-            border-radius: 5px
-        } 
+            border-radius: 5px;
+        }
+    
         .menu-section {
             padding: 15px;
-            
             margin-bottom: 10px;
             background-color: #ffe680; /* yellow */
             border-bottom: 2px solid #4d2600;
-             border: 1px dotted  #4d2600 ;
-             border-radius: 5px
+            border: 1px dotted #4d2600;
+            border-radius: 5px;
         }
+    
         .menu-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 5px;
         }
+    
         .menu-item {
             margin: 20px 0;
             font-size: 15px;
             display: flex;
             justify-content: space-between;
         }
+    
         .price {
             font-size: 8px;
             background-color: #ffcc66; /* darker yellow */
@@ -49,10 +53,8 @@
             color: #4d2600;
             text-align: right;
             align-items: center;
-            
-            
         }
-            
+    
         .price-label {
             font-size: 8px;
             font-weight: bold;
@@ -60,56 +62,184 @@
             width: 60px;
             height: 0px;
             text-align: left;
-            
-            
-           
-            
         }
-        footer{
+    
+        footer {
             background-color: #a6722e; /* medium brown */
-            color: #4d2600 ;
+            color: #4d2600;
             text-align: center;
             padding: 10px;
             font-size: 14px;
         }
-        .logo{
-            
+    
+        .logo {
             justify-content: center;
             color: #4d2600;
-            
         }
-        .welcome{
+    
+        .welcome {
             display: flex;
             justify-content: center;
         }
-        .button{
-          background-color:  ;
-          text-align: center;
-          text-decoration: none;
-          
+    
+        .button {
+            background-color: ;
+            text-align: center;
+            text-decoration: none;
         }
-        a{
-          color:#4d2600 ;
-          text-decoration: none;
-          display: block;
-          font-weight: bold;
-          background-color:#ffe680;;
-          border: 1px dotted  #4d2600 ;
-          margin-left: 80px;
-          margin-right: 80px;
-          border-radius: 25px;
+    
+        a {
+            color: #4d2600;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+            background-color: #ffe680;
+            border: 1px dotted #4d2600;
+            margin-left: 80px;
+            margin-right: 80px;
+            border-radius: 25px;
         }
-        .gomenu{
-            text-align:center;
-            margin-right:150px;
-            margin-left:150px;
-            background-color:#a6722e;
-            color:#ffe680;
-            text-align:center;
+    
+        .gomenu {
+            text-align: center;
+            margin-right: 150px;
+            margin-left: 150px;
+            background-color: #a6722e;
+            color: #ffe680;
+            text-align: center;
             align-items: center;
-
+        }
+    
+        /* Media Queries for Responsiveness */
+    
+        @media (max-width: 1024px) {
+            header {
+                font-size: 16px;
+                padding: 8px;
+            }
+    
+            .menu-section {
+                padding: 12px;
+            }
+    
+            .menu-title {
+                font-size: 16px;
+            }
+    
+            .menu-item {
+                font-size: 14px;
+            }
+    
+            .price {
+                font-size: 10px;
+            }
+    
+            footer {
+                font-size: 12px;
+            }
+    
+            a {
+                margin-left: 60px;
+                margin-right: 60px;
+                font-size: 14px;
+            }
+    
+            .gomenu {
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+        }
+    
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+    
+            header {
+                font-size: 14px;
+                padding: 6px;
+            }
+    
+            .menu-section {
+                padding: 10px;
+            }
+    
+            .menu-title {
+                font-size: 14px;
+            }
+    
+            .menu-item {
+                font-size: 12px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+    
+            .price {
+                font-size: 10px;
+                margin-top: 5px;
+            }
+    
+            footer {
+                font-size: 12px;
+            }
+    
+            a {
+                margin-left: 40px;
+                margin-right: 40px;
+                font-size: 12px;
+            }
+    
+            .gomenu {
+                margin-right: 50px;
+                margin-left: 50px;
+            }
+        }
+    
+        /* Media Queries for Small Screens (Mobile) */
+        @media (max-width: 400px) {
+            body {
+                padding: 8px;
+            }
+    
+            header {
+                font-size: 12px;
+                padding: 5px;
+            }
+    
+            .menu-section {
+                padding: 8px;
+            }
+    
+            .menu-title {
+                font-size: 12px;
+            }
+    
+            .menu-item {
+                font-size: 10px;
+            }
+    
+            .price {
+                font-size: 8px;
+            }
+    
+            footer {
+                font-size: 10px;
+            }
+    
+            a {
+                margin-left: 30px;
+                margin-right: 30px;
+                font-size: 10px;
+            }
+    
+            .gomenu {
+                margin-right: 30px;
+                margin-left: 30px;
+            }
         }
     </style>
+    
 </head>
 <body>
     <header>
