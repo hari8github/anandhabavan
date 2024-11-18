@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,162 +7,110 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffeb99;
-            color: #4d2600;
+            background-color: #ffeb99; /* light yellow */
+            color: #4d2600; /* dark brown */
             margin: 0px;
             padding: 20px;
-            border-radius: 5px;
-        }
-
-        .back-to-top {
-        display: block;
-        color: #ffffff; /* White text */
-        text-decoration: none;
-        font-weight: bold;
-        text-align: center;
-        margin: 20px auto;
-        background-color: #4d2600; /* Matches header background color */
-        padding: 10px 20px;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        font-size: 16px;
-        cursor: pointer;
-        max-width: 200px; /* Consistent size */
-        }
-
-/* Hover effect */
-        .back-to-top:hover,
-        .back-to-top:focus {
-        background-color: #4d2600; /* Slightly darker shade of the header color */
-        transform: scale(1.05); /* Slightly larger */
-        }
-
-
+            border-radius: 5px
+        } 
         header {
-    background-color: #a36b2a; /* Match the header background color */
-    color: #ffffff; /* White text */
-    text-align: center; /* Center align the text and content */
-    padding: 20px 10px; /* Add spacing around the content */
-    font-family: 'Arial', sans-serif; /* Use a clean font */
-    border-radius: 10px; /* Rounded edges to match the style */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-}
-
-header h1 {
-    font-size: 32px; /* Hotel name font size */
-    margin: 0; /* Remove unnecessary margin */
-    font-weight: bold;
-}
-
-header p {
-    font-size: 18px; /* Subtext font size */
-    margin: 10px 0 0; /* Add spacing below title */
-    color: #ffcc66; /* Match the "MENU CARD" text color */
-}
-
-header img {
-    max-width: 100px; /* Adjust image size */
-    margin: 10px auto; /* Center align the image */
-    display: block;
-}
-
+            background-color: #a6722e; /* medium brown */
+            color: #4d2600;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px
+        } 
         .menu-section {
             padding: 15px;
+            
             margin-bottom: 10px;
-            background-color: #ffe680;
+            background-color: #ffe680; /* yellow */
             border-bottom: 2px solid #4d2600;
-            border: 1px dotted #4d2600;
-            border-radius: 5px;
+             border: 1px dotted  #4d2600 ;
+             border-radius: 5px
         }
-
         .menu-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 5px;
         }
-
         .menu-item {
             margin: 20px 0;
             font-size: 15px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 5px;
         }
-
         .price {
-            font-size: 16px;
-            background-color: #ffcc66;
+            font-size: 8px;
+            background-color: #ffcc66; /* darker yellow */
             padding: 2px 5px;
             border-radius: 5px;
             color: #4d2600;
+            text-align: right;
             align-items: center;
-            margin-left: 10px;
-            margin-top: 5px;
-            display: block;
+            
+            
         }
-
-        .price-section {
-    text-align: left;
-    font-size: 16px; /* Adjust as needed */
-    line-height: 1.5; /* Add proper spacing between lines */
-}
-
-.price-title {
-    font-weight: bold;
-    color: #000; /* Color for titles */
-}
-
-.price-value {
-    color: #000; /* Color for values */
-    font-weight: normal;
-}
-
-        .footer {
-            background-color: #a6722e;
-            color: #4d2600;
+            
+        .price-label {
+            font-size: 8px;
+            font-weight: bold;
+            display: flex;
+            width: 60px;
+            height: 0px;
+            text-align: left;
+            
+            
+           
+            
+        }
+        footer{
+            background-color: #a6722e; /* medium brown */
+            color: #4d2600 ;
             text-align: center;
             padding: 10px;
             font-size: 14px;
         }
-
-        .logo {
+        .logo{
+            
             justify-content: center;
             color: #4d2600;
+            
         }
-
-        .button {
-            text-align: center;
-            text-decoration: none;
+        .welcome{
+            display: flex;
+            justify-content: center;
         }
-
-        a {
-            color: #4d2600;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-            background-color: #ffe680;
-            border: 1px dotted #4d2600;
-            margin-left: 80px;
-            margin-right: 80px;
-            border-radius: 25px;
+        .button{
+          background-color:  ;
+          text-align: center;
+          text-decoration: none;
+          
         }
+        a{
+          color:#4d2600 ;
+          text-decoration: none;
+          display: block;
+          font-weight: bold;
+          background-color:#ffe680;;
+          border: 1px dotted  #4d2600 ;
+          margin-left: 80px;
+          margin-right: 80px;
+          border-radius: 25px;
+        }
+        .gomenu{
+            text-align:center;
+            margin-right:150px;
+            margin-left:150px;
+            background-color:#a6722e;
+            color:#ffe680;
+            text-align:center;
+            align-items: center;
 
-        /* Media Queries for Responsiveness */
-        @media (max-width: 600px) {
-            .menu-item {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            a {
-                margin-left: 20px;
-                margin-right: 20px;
-            }
         }
     </style>
-<style type="text/css" id="mytempCss">._8mqQwQ { display: none; } ._1TWLMK.icF5zO { opacity: 0.01; }</style></head>
+</head>
 <body>
     <header>
         <div class="logo">
@@ -171,29 +118,29 @@ header img {
             <h2 style="text-align:center;">HOTEL SREE ANANDHA BAVAN</h2>
         </div>
         
-        <h3 style="color:#ffbf36 ">MENU CARD</h3><h3>
-    </h3></header>
+        <h3 style="color:#ffbf36 ">MENU CARD<h3>
+    </header>
      <p id="start"></p>
     <p style="font-weight:bold;text-align:center;font-size:22px"> "Tap the Button to Customize Your Meal Experience"</p>
     
    
     <div class="button">
      
-      <a href="#section1">IDLY &amp; OTHERS</a>
+      <a href="#section1">IDLY & OTHERS</a>
       <p></p>
       <a href="#section2">SNACKS</a>
       <p></p>
       <a href="#section3">DOSA VARIETIES</a>
       <p></p>
-      <a href="#section4">IDIYAPPAM &amp; APPAM</a>
+      <a href="#section4">IDIYAPPAM & APPAM</a>
       <p></p>
       <a href="#section5">VARIETIES RICE</a>
       <p></p>
       <a href="#section6">MEALS</a>
        <p></p>
-      <a href="#section7">FRIED RICE &amp; NOODLES</a>
+      <a href="#section7">FRIED RICE & NOODLES</a>
        <p></p>
-      <a href="#section8">STARTERS &amp; MASALA</a>
+      <a href="#section8">STARTERS & MASALA</a>
        <p></p>
       <a href="#section9">PAROTTA VARIETIES</a>
        <p></p>
@@ -205,13 +152,13 @@ header img {
        <p></p>
       <a href="#section13">FRESH JUICES</a>
        <p></p>
-      <a href="#section14">TEA &amp; COFFEE</a>
+      <a href="#section14">TEA & COFFEE</a>
     </div>
     <p></p>
     
     <div class="menu-section">
       <p id="section1"></p>
-        <div class="menu-title">Idly &amp; Others (06:30 am to 10:30 am &amp; 05:00 pm to 10:30 pm)</div>
+        <div class="menu-title">Idly & Others (06:30 am to 10:30 am & 05:00 pm to 10:30 pm)</div>
         <div class="menu-item">
             <span>Idly</span>
             <span class="price">
@@ -269,7 +216,8 @@ header img {
                 <span class="price-label">Parcel:</span> 40.00
             </span>
     </div>
-      <a class="back-to-top" href="#start">^</a>
+    <a class="gomenu" href="#start">^</a>
+</div><div class="menu-section">
   <p id="section2"></p>
     <div class="menu-title">Snacks (06:30 am to 10:00 am)</div>
     <div class="menu-item">
@@ -296,7 +244,7 @@ header img {
             <span class="price-label">Parcel:</span> 55.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section3"></p>
     <div class="menu-title">Dosa Varieties (6:30 am to 11:00 pm)</div>
@@ -596,10 +544,10 @@ header img {
             <span class="price-label">Parcel:</span> 85.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section4"></p>
-    <div class="menu-title">Idiyappam &amp; Appam (07:00 am to 10:00 am &amp; 04:00 pm to 11:00 pm)</div>
+    <div class="menu-title">Idiyappam & Appam (07:00 am to 10:00 am & 04:00 pm to 11:00 pm)</div>
     <div class="menu-item">
         <span>Aappam</span>
         <span class="price">
@@ -640,7 +588,7 @@ header img {
             <span class="price-label">Parcel:</span> 35.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section5"></p>
     <div class="menu-title">Variety Rice (Any One Per Day) (11:00 am to 03:00 pm)</div>
@@ -708,7 +656,7 @@ header img {
             <span class="price-label">Parcel:</span> 100.00
         </span>
     </div>    
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section6"></p>
     <div class="menu-title">Meals (12:00 pm to 04:00 pm)</div>
@@ -732,10 +680,10 @@ header img {
             <span class="price-label">Price:</span> 110.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section7"></p>
-    <div class="menu-title">Rice &amp; Noodles (12:00 pm to 11:00 pm)</div>
+    <div class="menu-title">Rice & Noodles (12:00 pm to 11:00 pm)</div>
     <div class="menu-item">
         <span>Fried Rice</span>
         <span class="price">
@@ -856,11 +804,11 @@ header img {
             <span class="price-label">Parcel:</span> 180.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div>
 <div class="menu-section">
   <p id="section8"></p>
-    <div class="menu-title">Starters &amp; Masala (12:00 pm to 11:00 pm)</div>
+    <div class="menu-title">Starters & Masala (12:00 pm to 11:00 pm)</div>
     <div class="menu-item">
         <span>Gobi 65</span>
         <span class="price">
@@ -965,7 +913,7 @@ header img {
             <span class="price-label">Parcel:</span> 160.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div>
 <div class="menu-section">
   <p id="section9"></p>
@@ -1050,7 +998,7 @@ header img {
             <span class="price-label">Parcel:</span> 160.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section10"></p>
     <div class="menu-title">Special Idly Varieties (04:00 pm to 11:00 pm)</div>
@@ -1118,7 +1066,7 @@ header img {
             <span class="price-label">Parcel:</span> 140.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section11"></p>
     <div class="menu-title">Sevai Varieties (04:00 pm to 10:30 pm)</div>
@@ -1178,7 +1126,7 @@ header img {
             <span class="price-label">Parcel:</span> 90.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section12"></p>
     <div class="menu-title">Chaat Varieties (12:00 pm to 11:00 pm)</div>
@@ -1326,7 +1274,7 @@ header img {
             <span class="price-label">Parcel:</span> 75.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
     <p id="section13"></p>
     <div class="menu-title">Fresh juices (08:00 am to 11:00 pm)</div>
@@ -1418,10 +1366,10 @@ header img {
             <span class="price-label">Parcel:</span> 105.00
         </span>
     </div>
-    <a class="back-to-top" href="#start">^</a>
+     <a class="gomenu" href="#start">^</a>
 </div><div class="menu-section">
   <p id="section14"></p>
-    <div class="menu-title">Tea &amp; Coffee (06:30 am to 11:00 pm)</div>
+    <div class="menu-title">Tea & Coffee (06:30 am to 11:00 pm)</div>
     <div class="menu-item">
         <span>Coffee</span>
         <span class="price">
@@ -1527,7 +1475,7 @@ header img {
         </span>
         
     </div>
-    <a class="back-to-top" href="#start">^</a>
+    <a class="gomenu" href="#start">^</a>
 </div>
 <footer>
     <img src="./img/vanakam-removebg-preview.png" width="50px" height="50px" alt="">
@@ -1539,43 +1487,5 @@ header img {
         Tirupur Dt - 638 812.</p>
         <p>Contact - +91 94434 54444</p>
 </footer>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-</body></html>
+</body>
+</html>
