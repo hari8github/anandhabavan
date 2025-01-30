@@ -16,73 +16,34 @@
             to { opacity: 1; transform: translateY(0); }
         }
     
-        @keyframes scaleIn {
-            from { transform: scale(0.95); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-    
         body {
-            background: linear-gradient(135deg, #4E342E 0%, #e79316 100%); /* Dark brown gradient */
+            background: linear-gradient(135deg, #4E342E 0%, #e79316 100%);
             font-family: 'Arial', sans-serif;
             color: #333;
             min-height: 100vh;
         }
     
-        .max-w-4xl {
-            max-width: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-    
         .brand-header {
             text-align: center;
             color: white;
-            padding: 40px 10%;
-            margin-bottom: 40px;
+            padding: 20px 5%;
             background: linear-gradient(145deg, #f5cc2b 0%, #522911 100%);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             animation: fadeIn 0.8s ease-out;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-    
-        .brand-header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            transform: rotate(-45deg);
-            z-index: 1;
         }
     
         .brand-name {
-            font-size: 3rem;
+            font-size: 1.8rem;
             font-weight: bold;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-            position: relative;
-            z-index: 2;
-            background: linear-gradient(to right, #7a2710, #782d0f); /* Yellow gradient */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            margin: 10px 0;
+            background: linear-gradient(to right, #7a2710, #782d0f);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            transition: transform 0.3s ease;
-        }
-    
-        .brand-name:hover {
-            transform: scale(1.03);
         }
     
         .brand-tagline {
-            font-size: 1.4rem;
-            opacity: 0.9;
-            position: relative;
-            z-index: 2;
+            font-size: 1.1rem;
             color: rgba(255,255,255,0.9);
             font-style: italic;
         }
@@ -90,24 +51,19 @@
         .card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 12px;
-            padding: 20px;
-            margin: 12px;
+            padding: 15px;
+            margin: 8px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-    
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
     
         .categories-screen, .menu-items-screen {
             display: none;
             opacity: 0;
             transition: opacity 0.3s ease;
+            padding: 10px;
         }
     
         .active {
@@ -118,179 +74,152 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 10px;
-        }
-    
-        @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-    
-        @media (min-width: 1024px) {
-            .grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
+            gap: 10px;
         }
     
         .back-button {
             display: flex;
             align-items: center;
-            color: #8D6E63; /* Brown text */
+            color: #8D6E63;
             border: none;
-            background: #FFF8E1; /* Light yellow */
-            cursor: pointer;
-            font-size: 1rem;
-            padding: 10px 20px;
+            background: #FFF8E1;
+            padding: 8px 16px;
             border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-    
-        .back-button:hover {
-            background: #FFECB3; /* Darker yellow */
-            color: #4E342E; /* Dark brown */
+            font-size: 0.9rem;
+            width: fit-content;
         }
     
         .header {
             display: flex;
             align-items: center;
-            margin-bottom: 24px;
-            animation: fadeIn 0.5s ease-out;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
     
         .category-title {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: bold;
-            margin-left: 16px;
             color: white;
         }
     
         .menu-title {
-            font-size: 1.75rem;
+            font-size: 1.4rem;
             font-weight: bold;
             text-align: center;
-            margin-bottom: 24px;
+            margin: 16px 0;
             color: white;
         }
     
         .price-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin-top: 12px;
+            gap: 8px;
+            margin-top: 8px;
         }
     
         .price-box {
-            padding: 12px;
-            border-radius: 8px;
+            padding: 8px;
+            border-radius: 6px;
             text-align: center;
-            transition: transform 0.3s ease;
         }
     
-        .price-box:hover {
-            transform: scale(1.05);
-        }
-    
-        .price-box.ac { background-color: #FFF59D; } /* Light yellow */
-        .price-box.non-ac { background-color: #FFD54F; } /* Bright yellow */
-        .price-box.parcel { background-color: #FFEB3B; } /* Yellow */
+        .price-box.ac { background-color: #FFF59D; }
+        .price-box.non-ac { background-color: #FFD54F; }
+        .price-box.parcel { background-color: #FFEB3B; }
     
         .price-label {
-            color: #3E2723; /* Dark brown */
-            font-size: 0.875rem;
-            margin-bottom: 4px;
+            color: #3E2723;
+            font-size: 0.75rem;
+            margin-bottom: 2px;
             font-weight: bold;
         }
     
         .price-value {
             font-weight: bold;
-            font-size: 1.25rem;
-            color: #4E342E; /* Dark brown */
+            font-size: 1rem;
+            color: #4E342E;
         }
     
         .category-icon {
-            font-size: 2.5rem;
-            margin-bottom: 12px;
-            transition: transform 0.3s ease;
-        }
-    
-        .card:hover .category-icon {
-            transform: scale(1.2);
+            font-size: 2rem;
+            margin-bottom: 8px;
         }
     
         .category-name {
             font-weight: 600;
-            color: #4E342E; /* Dark brown */
-            font-size: 1.1rem;
-        }
-    
-        .divider {
-            width: 50px;
-            height: 3px;
-            background: #4E342E; /* Dark brown */
-            margin: 15px auto;
-            border-radius: 2px;
+            color: #4E342E;
+            font-size: 0.9rem;
         }
     
         footer {
-            background-color: #3E2723; /* Dark brown */
-            color: #FFECB3; /* Light yellow */
+            background-color: #3E2723;
+            color: #FFECB3;
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            width: 100%;
-            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+            padding: 15px;
+            font-size: 0.9rem;
+            margin-top: 20px;
         }
     
         footer h2 {
             color: white;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-    
-        footer img {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
         }
     
         footer p {
-            margin: 5px 0;
-            opacity: 0.9;
+            margin: 4px 0;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 360px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .brand-name {
+                font-size: 1.5rem;
+            }
         }
     </style>
-    
 </head>
 <body>
-    <div class="max-w-4xl">
-        <div class="brand-header">
-            <img src="img/logo AB.png" alt="Sree anadha bavan Logo" style="width: 150px; margin-bottom: 20px;">
-            <h1 class="brand-name">SREE ANANDHA BAVAN</h1>
-            <p class="brand-tagline"><B>SINCE 2000</B></p>
-        </div>
-
-        <!-- Categories Screen -->
-        <div class="categories-screen active" id="categoriesScreen">
-            <h1 class="menu-title">Our Menu</h1>
-            <div class="grid" id="categoriesGrid"></div>
-        </div>
-
-        <!-- Menu Items Screen -->
-        <div class="menu-items-screen" id="menuItemsScreen">
-            <div class="header">
-                <button class="back-button" onclick="showCategories()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Back to Categories
-                </button>
-                <h2 class="category-title" id="selectedCategoryTitle"></h2>
-            </div>
-            <div id="menuItemsList"></div>
-        </div>
+    <div class="brand-header">
+        <img src="/api/placeholder/100/100" alt="Sree anandha bavan Logo" style="width: 100px; margin-bottom: 10px;">
+        <h1 class="brand-name">SREE ANANDHA BAVAN</h1>
+        <p class="brand-tagline"><b>SINCE 2000</b></p>
     </div>
 
+    <div class="categories-screen active" id="categoriesScreen">
+        <h1 class="menu-title">Our Menu</h1>
+        <div class="grid" id="categoriesGrid"></div>
+    </div>
+
+    <div class="menu-items-screen" id="menuItemsScreen">
+        <div class="header">
+            <button class="back-button" onclick="showCategories()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back
+            </button>
+            <h2 class="category-title" id="selectedCategoryTitle"></h2>
+        </div>
+        <div id="menuItemsList"></div>
+    </div>
+
+    <footer>
+        <h2><b>WELCOME</b></h2>
+        <h2><b>HOTEL SREE ANANDHA BAVAN VEG A/C</b></h2>
+        <p>NH 47, Covai - Salem Highway, Near HP Pertol Bunk, Chengapalli, Uthukkuli Tk, Tirupur Dt-638 812</p>
+        <p>Contact - +91 94434 54444</p>
+    </footer>
+
     <script>
-        // Your existing JavaScript code remains the same
         const categories = [
             { id: 1, name: "IDLY & OTHERS", icon: "🍽️" },
             { id: 2, name: "SNACKS", icon: "🍟" },
@@ -307,6 +236,7 @@
             { id: 13, name: "FRESH JUICES", icon: "🍹" },
             { id: 14, name: "TEA & COFFEE", icon: "☕" }
         ];
+
         const menuItems = {
             "IDLY & OTHERS": [
         {
@@ -1599,22 +1529,23 @@
         };
         
 
-        // Initialize categories
+
+
         function initializeCategories() {
             const grid = document.getElementById('categoriesGrid');
-            categories.forEach(category => {
+            categories.forEach((category, index) => {
                 const card = document.createElement('div');
                 card.className = 'card';
+                card.style.animationDelay = `${index * 0.1}s`;
                 card.onclick = () => showMenuItems(category.name);
-                card.innerHTML = ` 
+                card.innerHTML = `
                     <div class="category-icon">${category.icon}</div>
-                    <div class="font-medium">${category.name}</div>
+                    <div class="category-name">${category.name}</div>
                 `;
                 grid.appendChild(card);
             });
         }
 
-        // Show menu items for selected category
         function showMenuItems(categoryName) {
             document.getElementById('categoriesScreen').classList.remove('active');
             document.getElementById('menuItemsScreen').classList.add('active');
@@ -1628,7 +1559,7 @@
                 const itemCard = document.createElement('div');
                 itemCard.className = 'card';
                 itemCard.innerHTML = `
-                    <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 12px;">${item.name}</h3>
+                    <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 8px;">${item.name}</h3>
                     <div class="price-grid">
                         <div class="price-box ac">
                             <div class="price-label">AC</div>
@@ -1648,40 +1579,12 @@
             });
         }
 
-        // Show categories screen
         function showCategories() {
             document.getElementById('menuItemsScreen').classList.remove('active');
             document.getElementById('categoriesScreen').classList.add('active');
         }
 
-        function initializeCategories() {
-            const grid = document.getElementById('categoriesGrid');
-            categories.forEach((category, index) => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.animationDelay = `${index * 0.1}s`;
-                card.onclick = () => showMenuItems(category.name);
-                card.innerHTML = `
-                    <div class="category-icon">${category.icon}</div>
-                    <div class="category-name">${category.name}</div>
-                    <div class="divider"></div>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        // Your existing showMenuItems and showCategories functions remain the same
-        // Rest of your JavaScript code...
-
         window.onload = initializeCategories;
     </script>
-    <footer>
-            <h2><b>WELCOME</b></h2>
-            <h2><b>HOTEL SREE ANANDHA BAVAN 
-                VEG A/C</b></h2>
-        <p>NH 47, Covai - Salem Highway, Near HP Pertol Bunk, Chengapalli, Uthukkuli Tk, Tirupur Dt-638 812</p>
-            <p>Contact - +91 94434 54444</p>
-    </footer>
 </body>
 </html>
-
